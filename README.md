@@ -37,7 +37,7 @@ _Option 2:_ Read from stdin:
 ```bash
 $ pc
 Enter path:
-C:\\Users\\username
+C:\Users\username
 /C/Users/username
 ```
 
@@ -73,7 +73,7 @@ __NOTE:__ On Unix-style shells you might need to escape or quote backslashes.
 
 If you get output like this:
 ```bash
-pc c:\\Users\\username
+pc c:\Users\username
 c:Usersusername
 ```
 
