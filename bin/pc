@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var readline = require('readline');
+var pathUtils = require('../lib/pathUtils');
+
+var path;
+var newPath;
+if (process.argv.length >= 3){
+	path = process.argv[2];
+	
+	newPath = pathUtils.convert(path);
+	console.log(newPath);
+} else {
+	var rl = readline.createInterface({
+		input: process.stdin,
+		output: process.stdout
+	});
+	
+	// rl.question('Path:\n', function(data){
+	// rl.prompt();
+	console.warn('Enter path:');
+		
+	rl.on('line', function(data){
+		path = data;
+		newPath = pathUtils.convert(path);
+		console.log(newPath);
+		
+		rl.close();
+	});
+}
