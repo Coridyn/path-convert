@@ -85,6 +85,6 @@ pc "c:\\Users\\username"
 
 Or escape the backslashes:
 ```bash
-pc c:\\\\Users\\\\username
+pc c:\\Users\\username
 /c/Users/username
 ```
