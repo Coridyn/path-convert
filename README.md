@@ -79,7 +79,7 @@ c:Usersusername
 
 Quote the input path:
 ```bash
-pc "c:\\Users\\username"
+pc "c:\Users\username"
 /c/Users/username
 ```
 
